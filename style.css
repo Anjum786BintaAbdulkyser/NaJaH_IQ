@@ -1,4 +1,4 @@
-  :root{
+:root{
     --bg:#FAF7EF;
     --paper:#F3EEE0;
     --ink:#16231E;
@@ -38,26 +38,30 @@
     backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
-  .topbar{
-    display:flex; align-items:center; gap:16px;
-    padding:10px 28px; max-width:var(--max); margin:0 auto;
-    border-bottom:1px solid var(--line);
+  /* ---------- utility bar (donate + quote) ---------- */
+  .utility-bar{
+    background:var(--emerald);
+    border-bottom:1px solid rgba(255,255,255,0.12);
   }
-  .donate-btn{
-    display:inline-flex; align-items:center; gap:8px;
-    background:var(--gold); color:#fff !important; text-decoration:none;
-    padding:8px 16px; border-radius:2px; font-weight:600; font-size:0.85rem;
-    white-space:nowrap; transition:background .15s;
+  .utility-bar-inner{
+    display:flex; align-items:center; justify-content:flex-end;
+    gap:16px; flex-wrap:wrap;
+    padding:9px 28px;
   }
-  .donate-btn:hover{background:#96741f;}
-  .topbar-quote{
-    font-family:'Fraunces',serif; font-style:italic; color:var(--ink-soft);
-    font-size:0.85rem; line-height:1.4; margin:0;
+  .quran-quote{
+    margin:0; color:#CFE0D8; font-size:0.8rem; font-style:italic;
+    text-align:right; line-height:1.4;
   }
-  @media (max-width:640px){
-    .topbar{flex-wrap:wrap; gap:8px;}
-    .topbar-quote{font-size:0.78rem;}
+  .quran-quote span{white-space:nowrap;}
+  .btn-donate{
+    display:inline-block; flex-shrink:0; text-decoration:none;
+    background:var(--gold); color:var(--emerald); font-weight:700;
+    font-size:0.82rem; padding:7px 18px; border-radius:2px;
+    letter-spacing:0.2px; transition:background .15s, color .15s;
+    white-space:nowrap;
   }
+  .btn-donate:hover, .btn-donate:focus-visible{background:#EFEAD9; color:var(--emerald);}
+
   .nav{
     display:flex; align-items:center; justify-content:space-between;
     padding:18px 28px; max-width:var(--max); margin:0 auto;
@@ -74,18 +78,6 @@
   .nav-cta:hover{background:var(--emerald-2);}
   .menu-toggle{display:none; background:none; border:none; cursor:pointer; padding:6px;}
   .menu-toggle span{display:block; width:22px; height:2px; background:var(--ink); margin:5px 0;}
-
-  /* ---------- social icons ---------- */
-  .social-icons{display:flex; align-items:center; gap:14px;}
-  .social-icons a{
-    display:inline-flex; align-items:center; justify-content:center;
-    width:34px; height:34px; border:1px solid var(--line); border-radius:2px;
-    color:var(--emerald); transition:all .15s;
-  }
-  .social-icons a:hover{background:var(--emerald); color:#fff; border-color:var(--emerald);}
-  .social-icons svg{width:17px; height:17px; fill:currentColor;}
-  footer .social-icons a{border-color:rgba(255,255,255,0.25); color:#EFEAD9;}
-  footer .social-icons a:hover{background:var(--gold); border-color:var(--gold); color:#fff;}
 
   /* ---------- hero ---------- */
   .hero{position:relative; overflow:hidden; padding:96px 0 80px; border-bottom:1px solid var(--line);}
