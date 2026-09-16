@@ -7,15 +7,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="nav">
-    <div class="brand">NaJaH<span>_IQ</span></div>
-    <button 
+<button 
       class="menu-toggle" 
       id="menuToggle"
       aria-label="Open navigation menu"
@@ -25,9 +21,15 @@
       <span></span>
       <span></span>
     </button>
+<header>
+    <!-- Top bar: donation + quote -->
+    <div class="topbar">
+      <a href="https://almunqidh-foundation1.webnode.page/donate/" class="donate-btn" target="_blank" rel="noopener">Donate ❤</a>
+      <p class="topbar-quote">"Indeed, good deeds do away with misdeeds." (Qur'an 11:114)</p>
+    </div>
 
     <!-- Navigation -->
-    <nav id="navMenu">
+    <nav id="navMenu" class="nav">
       <ul id="navList">
 
         <li>
@@ -47,12 +49,21 @@
         </li>
 
         <li>
-          <a href="#contact" class="nav-link nav-cta">
+          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" class="nav-link nav-cta" target="_blank" rel="noopener">
             Book a Call <span>→</span>
           </a>
         </li>
 
       </ul>
+
+      <div class="social-icons" aria-label="Social media links">
+        <a href="https://www.youtube.com/channel/UCZNhj4EBGkq_GonO-0J9yBA" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/145197285/admin/dashboard/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+      </div>
     </nav>
 
   </div>
@@ -62,20 +73,14 @@
   <div class="wrap hero-grid">
     <div>
       <h1>Professional Islamic finance expertise, made affordable and Shariah-conscious.</h1>
-      <p class="lede">NaJaH_IQ provides consulting, research, analytics, branding, product management, and growth strategy services for Islamic finance companies and businesses operating across th[...]
+      <p class="lede">NaJaH_IQ provides consulting, research, analytics, branding, product management, and growth strategy services for Islamic finance companies and businesses operating across the halal economy.</p>
       <div class="cta-row">
-        <a href="#contact" class="btn btn-primary">Book a call</a>
+        <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" class="btn btn-primary" target="_blank" rel="noopener">Book a call</a>
         <a href="#services" class="btn btn-ghost">Explore services</a>
       </div>
       <div class="hero-tags">
         <span>Islamic Banking</span><span>Halal Investment</span><span>Takaful</span>
         <span>Sukuk &amp; Capital Markets</span><span>Fintech &amp; Startups</span>
-      </div>
-
-      <!-- Donation Section -->
-      <div class="donation-section">
-        <p class="donation-quote">"Indeed, good deeds do away with misdeeds." <span class="quran-ref">(Qur'an 11:114)</span></p>
-        <a href="https://almunqidh-foundation1.webnode.page/donate/" target="_blank" rel="noopener noreferrer" class="btn btn-donation">Support Our Mission</a>
       </div>
     </div>
     <div class="geo-panel" aria-hidden="true">
@@ -104,29 +109,29 @@
       <div>
         <span class="founder-name">Anjum Binta Abdul Kyser</span>
         <span class="founder-role">Founder, NaJaH_IQ</span>
-        <p>Anjum is an Islamic finance and data professional with experience across Islamic finance research, audit, data analytics, Islamic banking research, halal investment research, business [...]
-        <p>Her work includes experience with S&amp;P Global, Amaanah Financial Services &amp; Advisory, AlHuda CIBE (Islamic Microfinance research), and Peertechz Publications, alongside remote p[...]
-        <p>She started NaJaH_IQ to support the growing halal economy worldwide with practical, professional, and affordable consulting, research, analytics, branding, product, and growth services[...]
+        <p>Anjum is an Islamic finance and data professional with experience across Islamic finance research, audit, data analytics, Islamic banking research, halal investment research, business consulting, product research, market analysis, branding, and digital content.</p>
+        <p>Her work includes experience with S&amp;P Global, Amaanah Financial Services &amp; Advisory, AlHuda CIBE (Islamic Microfinance research), and Peertechz Publications, alongside remote projects with teams in Melbourne, Australia, and independent research and consulting work in Islamic finance and the halal economy.</p>
+        <p>She started NaJaH_IQ to support the growing halal economy worldwide with practical, professional, and affordable consulting, research, analytics, branding, product, and growth services — and to create opportunities for professionals who want to build meaningful careers through halal and ethical work.</p>
       </div>
       <div>
-        <p><strong style="color:var(--emerald)">NaJaH_IQ</strong> is a professional consulting, research, analytics, branding, product management, and growth strategy platform focused on Islamic [...]
-        <p>We support Islamic banks, Islamic finance companies, halal investment companies, Islamic fintechs, asset managers, Takaful companies, halal businesses, startups, and other organisations loo[...]
-        <p>Our aim is to make professional expertise more accessible by providing practical and affordable services in Islamic finance research, business consulting, data analytics, product devel[...]
+        <p><strong style="color:var(--emerald)">NaJaH_IQ</strong> is a professional consulting, research, analytics, branding, product management, and growth strategy platform focused on Islamic finance and the halal economy.</p>
+        <p>We support Islamic banks, Islamic finance companies, halal investment companies, Islamic fintechs, asset managers, Takaful companies, halal businesses, startups, and other organisations looking to develop and grow in a Shariah-conscious and ethical way.</p>
+        <p>Our aim is to make professional expertise more accessible by providing practical and affordable services in Islamic finance research, business consulting, data analytics, product development, market research, branding, digital content, and training.</p>
       </div>
     </div>
 
     <div class="pillars">
       <div class="pillar">
         <h3>Our Mission</h3>
-        <p>To serve the Islamic economy and Muslim community with affordable, practical, and professional services — connecting businesses with skilled professionals who want to work through ha[...]
+        <p>To serve the Islamic economy and Muslim community with affordable, practical, and professional services — connecting businesses with skilled professionals who want to work through halal, ethical, and responsible means, while respecting their professional and religious obligations.</p>
       </div>
       <div class="pillar">
         <h3>Our Vision</h3>
-        <p>To build a global professional network for the Islamic economy, connecting businesses, researchers, analysts, and consultants across countries — and to contribute to a stronger, more[...]
+        <p>To build a global professional network for the Islamic economy, connecting businesses, researchers, analysts, and consultants across countries — and to contribute to a stronger, more inclusive, professionally supported global halal economy.</p>
       </div>
       <div class="pillar">
         <h3>Our Commitment</h3>
-        <p>We believe professional success and ethical values work together. We're committed to affordability, quality, transparency, responsible work, continuous learning, and ethical earnings.<[...]
+        <p>We believe professional success and ethical values work together. We're committed to affordability, quality, transparency, responsible work, continuous learning, and ethical earnings.</p>
       </div>
     </div>
   </div>
@@ -219,7 +224,7 @@
     <div class="contact-grid">
       <ul class="path-list">
         <li>
-          <span class="path-name">Book a call</span>
+          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" class="path-name" target="_blank" rel="noopener">Book a call →</a>
           <span class="path-desc">Talk through your organisation's research, analytics, or strategy needs.</span>
         </li>
         <li>
@@ -240,24 +245,32 @@
         </li>
       </ul>
 
-      <div class="google-form-container">
-        <h3>Book a Call</h3>
-        <p>Fill in the form below to schedule a consultation call with our team.</p>
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLScp-EE7L-JISCrWAv63P1vb-ws-DKE9OXlV_8gPhlQln0w-zw/viewform?embedded=true" 
-          width="100%" 
-          height="600" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0"
-          class="google-form-iframe"
-        >
-          Loading…
-        </iframe>
-        <p style="font-size:0.85rem; color:var(--ink-soft); margin-top:16px;">
-          Or email us directly at <a href="mailto:ashnaabdulkyser@gmail.com" style="color:var(--emerald); text-decoration:underline;">ashnaabdulkyser@gmail.com</a>
-        </p>
-      </div>
+      <form class="inquiry" id="inquiryForm">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="reason">I'm reaching out about</label>
+          <select id="reason" name="reason">
+            <option>Booking a call</option>
+            <option>Joining as a trainer</option>
+            <option>Freelancer opportunities</option>
+            <option>Academy partnership</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send inquiry</button>
+        <p id="formNote" style="font-size:0.85rem; color:var(--ink-soft); display:none;">Thanks — this is a sample form; wire it up to your form handler or CRM of choice.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -268,9 +281,12 @@
       <div>
         <div class="brand">NaJaH<span>_IQ</span></div>
         <p>Serving the Islamic economy and the Muslim community through affordable, practical, Shariah-conscious consulting, research, and training.</p>
-        <div class="social-links">
-          <a href="https://www.youtube.com/channel/UCZNhj4EBGkq_GonO-0J9yBA" target="_blank" rel="noopener noreferrer" class="social-link youtube" aria-label="Follow us on YouTube">
-            <i class="fab fa-youtube"></i>
+        <div class="social-icons" style="margin-top:18px;" aria-label="Social media links">
+          <a href="https://www.youtube.com/channel/UCZNhj4EBGkq_GonO-0J9yBA" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/145197285/admin/dashboard/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
           </a>
         </div>
       </div>
@@ -287,7 +303,8 @@
         <div>
           <h5>Get involved</h5>
           <ul>
-            <li><a href="#contact">Book a call</a></li>
+            <li><a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener">Book a call</a></li>
+            <li><a href="https://almunqidh-foundation1.webnode.page/donate/" target="_blank" rel="noopener">Donate</a></li>
             <li><a href="#contact">Join as trainer</a></li>
             <li><a href="#contact">Freelancer opportunities</a></li>
           </ul>
@@ -327,7 +344,7 @@
     { icon: "💰", name: "Takaful Companies", items: ["Market research","Product research","Customer insights","Competitor analysis","Business analytics"] },
     { icon: "📜", name: "Sukuk & Islamic Capital Market Firms", items: ["Sukuk market research","Industry analysis","Data and reporting","Competitor intelligence","Research support"] },
     { icon: "🚀", name: "Startups Entering the Halal Economy", items: ["Business model research","Market-entry analysis","Product development","Competitor research","Growth strategy"] },
-    { icon: "🎓", name: "Islamic Finance Institutions & Training Providers", items: ["Research support","Educational content","Islamic finance training","Data analytics training","YouTube/learning content"] }
+    { icon: "🎓", name: "Islamic Finance Institutions & Training Providers", items: ["Research support","Educational content","Islamic finance training","Data analytics training","YouTube/learning content development"] }
   ];
 
   const wrap = document.getElementById('segments');
@@ -355,6 +372,12 @@
       head.setAttribute('aria-expanded', (!isOpen).toString());
       body.style.maxHeight = isOpen ? null : body.scrollHeight + 'px';
     });
+  });
+
+  // sample inquiry form (no backend wired up)
+  document.getElementById('inquiryForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    document.getElementById('formNote').style.display = 'block';
   });
 </script>
 </body>
