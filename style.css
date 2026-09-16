@@ -181,6 +181,24 @@
   }
   form.inquiry button{margin-top:6px;}
 
+
+
+  /* ---------- freelancer join card ---------- */
+  .freelancer-join{
+    border:1px solid var(--line);
+    background:var(--paper);
+    padding:32px;
+  }
+  .freelancer-join h3{
+    font-size:1.35rem;
+    margin-bottom:12px;
+  }
+  .freelancer-join p{
+    color:var(--ink-soft);
+    margin:0 0 22px;
+    max-width:48ch;
+  }
+
   /* ---------- footer ---------- */
   footer{background:var(--emerald); color:#EFEAD9; padding:56px 0 32px;}
   footer .brand{color:#fff;}
