@@ -157,6 +157,33 @@
   }
   form.inquiry button{margin-top:6px;}
 
+  /* ---------- Google Form Container ---------- */
+  .google-form-container{
+    padding:32px 0;
+    border-top:1px solid var(--line);
+  }
+  .google-form-container h3{
+    font-size:1.2rem;
+    margin-bottom:12px;
+    color:var(--emerald);
+  }
+  .google-form-container > p:first-of-type{
+    color:var(--ink-soft);
+    margin-bottom:24px;
+    font-size:0.96rem;
+  }
+  .google-form-iframe{
+    border:1px solid var(--line);
+    border-radius:2px;
+  }
+  .google-form-container a{
+    color:var(--emerald);
+    text-decoration:underline;
+  }
+  .google-form-container a:hover{
+    color:var(--emerald-2);
+  }
+
   /* ---------- footer ---------- */
   footer{background:var(--emerald); color:#EFEAD9; padding:56px 0 32px;}
   footer .brand{color:#fff;}
