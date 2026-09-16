@@ -224,7 +224,7 @@
           <span class="path-desc">Deliver Islamic finance or data analytics training with us.</span>
         </li>
         <li>
-          <span class="path-name">Freelancer opportunities</span>
+          <a class="path-name" href="https://forms.gle/qHSvrE6bfRWmQYMk6" target="_blank" rel="noopener noreferrer" aria-label="Join as a freelancer (opens a Google Form in a new tab)">Freelancer opportunities</a>
           <span class="path-desc">Join our network and earn through halal, ethical work.</span>
         </li>
         <li>
@@ -237,32 +237,11 @@
         </li>
       </ul>
 
-      <form class="inquiry" id="inquiryForm">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="reason">I'm reaching out about</label>
-          <select id="reason" name="reason">
-            <option>Booking a call</option>
-            <option>Joining as a trainer</option>
-            <option>Freelancer opportunities</option>
-            <option>Academy partnership</option>
-            <option>Something else</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send inquiry</button>
-        <p id="formNote" style="font-size:0.85rem; color:var(--ink-soft); display:none;">Thanks — this is a sample form; wire it up to your form handler or CRM of choice.</p>
-      </form>
+      <div class="freelancer-join">
+        <h3>Join as a Freelancer</h3>
+        <p>If you are a researcher, analyst, designer, consultant, or other professional interested in halal and ethical work, join the NaJaH_IQ freelancer network.</p>
+        <a href="https://forms.gle/qHSvrE6bfRWmQYMk6" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Join as a freelancer (opens a Google Form in a new tab)">Join as a Freelancer</a>
+      </div>
     </div>
   </div>
 </section>
@@ -365,11 +344,4 @@
     });
   });
 
-  // sample inquiry form (no backend wired up)
-  document.getElementById('inquiryForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.getElementById('formNote').style.display = 'block';
-  });
-</script>
-</body>
-</html>
+>
