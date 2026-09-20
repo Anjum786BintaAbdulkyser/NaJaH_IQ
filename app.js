@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Set current year in footer
+  // 1. Current Year Footer Auto-Update
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Dynamic Data Sources
 
-  // Alphabetical Research Papers
+  // Alphabetical Research Papers Data
   const researchPapers = [
     { title: "AAOIFI Governance & Shariah Standards Compliance", cat: "Governance", price: "$49", desc: "A comparative framework analyzing implementation challenges across South Asian Islamic financial institutions." },
     { title: "Asset-Backed vs Asset-Based Sukuk Structures", cat: "Capital Markets", price: "$65", desc: "Structural risk assessment and legal ownership analysis under international commercial laws." },
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { tag: "Macro Analysis", title: "Monetary Policy & Islamic Yield Curves", desc: "Impact of interest rate fluctuations on benchmark pricing in profit-sharing financing contracts." }
   ];
 
-  // Stock Screening Data
+  // Stock Screening Multi-Platform Data
   const stockScreeningData = [
     { ticker: "AAPL (Apple Inc.)", musaffa: "Compliant", islamicly: "Compliant", zoya: "Compliant", zamzam: "Compliant", status: "Pass" },
     { ticker: "MSFT (Microsoft Corp.)", musaffa: "Compliant", islamicly: "Compliant", zoya: "Compliant", zamzam: "Compliant", status: "Pass" },
@@ -105,13 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
     { ticker: "AMZN (Amazon.com)", musaffa: "Compliant", islamicly: "Compliant", zoya: "Compliant", zamzam: "Compliant", status: "Pass" }
   ];
 
-  // Sukuk & Takaful Cards
+  // Sukuk & Takaful Cards Data
   const sukukData = [
     { tag: "Sukuk Paper", title: "Green Sukuk Frameworks for Sustainable Infrastructure", desc: "ESG alignment within Shariah-compliant capital market structures." },
     { tag: "Takaful Paper", title: "Insurtech Solutions in Retakaful Operations", desc: "Improving claims processing speed through distributed ledger technology." }
   ];
 
-  // Blogs Data with YouTube links
+  // Commentary Blogs Data with YouTube Link Integration
   const blogsData = [
     {
       title: "Understanding Mudaraba vs. Musharaka in Modern Startups",
@@ -130,9 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  // 6. Render Functions
+  // 6. Dynamic Rendering Functions
 
-  // Render Research Papers (With Search Filter)
+  // Render Research Papers (Filtered Alphabetically)
   const papersContainer = document.getElementById('papersContainer');
   const paperSearchInput = document.getElementById('paperSearchInput');
 
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     if (filtered.length === 0) {
-      papersContainer.innerHTML = '<p style="padding: 16px; color: var(--ink-soft);">No research papers found matching your query.</p>';
+      papersContainer.innerHTML = '<p style="padding: 16px; color: var(--ink-soft);">No research papers found matching your search term.</p>';
       return;
     }
 
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
       papersContainer.appendChild(row);
     });
 
-    // Attach Modal Triggers
+    // Attach Access Gate Modal Triggers
     document.querySelectorAll('.btn-purchase').forEach(btn => {
       btn.addEventListener('click', (e) => {
         openPaymentModal(
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   renderPapers();
 
-  // Render Market Cards
+  // Render Market Intelligence Cards
   const marketCardsContainer = document.getElementById('marketCardsContainer');
   if (marketCardsContainer) {
     marketInsights.forEach(item => {
@@ -197,14 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>${item.desc}</p>
         </div>
         <div class="card-footer">
-          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Request Full Brief</a>
+          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Request Brief</a>
         </div>
       `;
       marketCardsContainer.appendChild(card);
     });
   }
 
-  // Render Screener Table
+  // Render Stock Screener Cross-Platform Table
   const screenerTableBody = document.getElementById('screenerTableBody');
   if (screenerTableBody) {
     stockScreeningData.forEach(row => {
@@ -235,14 +235,14 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>${item.desc}</p>
         </div>
         <div class="card-footer">
-          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Download Executive Summary</a>
+          <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Download Summary</a>
         </div>
       `;
       sukukCardsContainer.appendChild(card);
     });
   }
 
-  // Render Blogs
+  // Render Commentary Blogs
   const blogsContainer = document.getElementById('blogsContainer');
   if (blogsContainer) {
     blogsData.forEach(item => {
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Modals Logic
+  // 7. Payment & Video Modal Handlers
   const paymentModal = document.getElementById('paymentModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalPaperTitle = document.getElementById('modalPaperTitle');
@@ -299,13 +299,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closePaymentModal);
   if (btnConfirmPay) {
     btnConfirmPay.addEventListener('click', () => {
-      alert('Payment processing simulation complete. Redirecting to booking form for report fulfillment...');
+      alert('Redirecting to secure booking and delivery form...');
       window.open('https://forms.gle/Wtq2EEhE5vZyKUEj8', '_blank');
       closePaymentModal();
     });
   }
 
-  // Video Modal
+  // YouTube Video Modal Handlers
   const videoModal = document.getElementById('videoModal');
   const videoModalCloseBtn = document.getElementById('videoModalCloseBtn');
   const videoModalTitle = document.getElementById('videoModalTitle');
@@ -314,8 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function openVideoModal(title, videoId) {
     if (!videoModal) return;
     videoModalTitle.textContent = title;
-    // Embed channel or search link safely inside modal iframe
-    videoIframe.src = `https://www.youtube.com/embed?listType=playlist&list=UUZNhj4EBGkq_GonO-0J9yBA`;
+    videoIframe.src = `https://www.youtube.com/embed?listType=playlist&list=${videoId}`;
     videoModal.classList.add('open');
     videoModal.setAttribute('aria-hidden', 'false');
   }
@@ -329,7 +328,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (videoModalCloseBtn) videoModalCloseBtn.addEventListener('click', closeVideoModal);
 
-  // Close modals on backdrop click
   window.addEventListener('click', (e) => {
     if (e.target === paymentModal) closePaymentModal();
     if (e.target === videoModal) closeVideoModal();
