@@ -20,7 +20,9 @@
   </div>
   <div class="nav-wrapper">
     <div class="wrap nav">
-      <a href="#home" class="brand">NaJaH<span>_IQ</span></a>
+      <a href="#home" class="brand-logo-link">
+        <img src="Logo.png" alt="NaJaH_IQ Logo" class="header-logo">
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -54,18 +56,8 @@
           <span>Sukuk &amp; Capital Markets</span><span>Fintech &amp; Startups</span>
         </div>
       </div>
-      <div class="geo-panel" aria-hidden="true">
-        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <pattern id="star8" width="100" height="100" patternUnits="userSpaceOnUse">
-              <g stroke="#EFEAD9" stroke-width="1" fill="none" opacity="0.55">
-                <path d="M50 4 L61 28 L88 22 L72 44 L96 50 L72 56 L88 78 L61 72 L50 96 L39 72 L12 78 L28 56 L4 50 L28 44 L12 22 L39 28 Z"/>
-                <circle cx="50" cy="50" r="14"/>
-              </g>
-            </pattern>
-          </defs>
-          <rect width="400" height="400" fill="url(#star8)"/>
-        </svg>
+      <div class="geo-panel hero-logo-container">
+        <img src="Logo.png" alt="NaJaH_IQ Islamic Finance Consulting" class="hero-center-logo">
       </div>
     </div>
   </section>
@@ -109,62 +101,61 @@
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Accordion Section -->
   <section id="services" class="alt">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">Services</span>
-        <h2>Who we work with</h2>
+        <h2>Who We Work With</h2>
         <p>Ten segments of the halal economy, each with a tailored set of research, analytics, and strategy services. Select a segment to explore.</p>
       </div>
       <div class="segments" id="segments"></div>
     </div>
   </section>
 
-  <!-- Dynamic Insights & Sample Work Dashboard -->
+  <!-- Dynamic Insights & Sample Work Section with Sliding Effects -->
   <section id="insights">
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">Dynamic Intelligence Hub</span>
-        <h2>Research, Writing, &amp; Delivered Work</h2>
-        <p>Explore client deliverables, market research, portfolio analytics, Halal compliance graphics, and Sukuk/Takaful frameworks.</p>
+        <span class="kicker">Research &amp; Sample Work</span>
+        <h2>Dynamic Research &amp; Intelligence Hub</h2>
+        <p>Explore our client research papers, market analysis, Shariah stock compliance metrics, portfolio analytics, and Sukuk &amp; Takaful reports.</p>
       </div>
 
-      <!-- Tab Navigation -->
+      <!-- Sliding Navigation Bar -->
       <div class="sliding-tabs-nav">
-        <button class="tab-btn active" data-target="tab-research">Research &amp; Sample Work</button>
-        <button class="tab-btn" data-target="tab-market">Market Analysis</button>
+        <button class="tab-btn active" data-target="tab-research">Research Reports &amp; Sample Work</button>
+        <button class="tab-btn" data-target="tab-market">Market Analysis &amp; Banking</button>
         <button class="tab-btn" data-target="tab-halal">Halal Compliance &amp; Portfolio</button>
-        <button class="tab-btn" data-target="tab-sukuk">Sukuk &amp; Takaful</button>
+        <button class="tab-btn" data-target="tab-sukuk">Sukuk &amp; Takaful Reports</button>
       </div>
 
-      <!-- Tab Panels Container -->
       <div class="tabs-container">
         
-        <!-- Tab 1: Research Reports & Sample Work (Search & Gate) -->
+        <!-- Tab 1: Searchable Alphabetical Research Papers -->
         <div class="tab-panel active" id="tab-research">
           <div class="panel-header">
-            <h3>Searchable Client Research Papers</h3>
-            <p>Access client deliverables and industry reports sorted alphabetically. Click any paper to view details or unlock access.</p>
-            <input type="text" id="paperSearchInput" class="search-input" placeholder="Search papers by title or topic (e.g., Sukuk, AAOIFI, Fintech)...">
+            <h3>Alphabetical Research Papers &amp; Deliverables</h3>
+            <p>Clients and partners can search through published papers. Premium reports require purchase access.</p>
+            <input type="text" id="paperSearchInput" class="search-input" placeholder="Search papers by title or subject (e.g. AAOIFI, Liquidity, Sukuk)...">
           </div>
           <div class="papers-list" id="papersContainer"></div>
         </div>
 
-        <!-- Tab 2: Market Analysis & Insights -->
+        <!-- Tab 2: Market Analysis & Islamic Banking -->
         <div class="tab-panel" id="tab-market">
           <div class="panel-header">
-            <h3>Islamic Finance &amp; Banking Market Insights</h3>
-            <p>Real-time sector commentary, market positioning reports, and strategic intelligence.</p>
+            <h3>Market Analysis &amp; Banking Insights</h3>
+            <p>Quarterly industry intelligence, macro analysis, and product benchmarking in Islamic banking.</p>
           </div>
           <div class="cards-grid" id="marketCardsContainer"></div>
         </div>
 
-        <!-- Tab 3: Halal Compliance & Portfolio Analysis -->
+        <!-- Tab 3: Halal Compliance & Portfolio Graphics -->
         <div class="tab-panel" id="tab-halal">
           <div class="panel-header">
-            <h3>Halal Stock Screening &amp; Portfolio Compliance</h3>
-            <p>Aggregated Shariah-compliance percentages cross-referenced with top platforms (Musaffa, Islamicly, Zoya, Zamzam Capital).</p>
+            <h3>Halal Stock Compliance &amp; Portfolio Analytics</h3>
+            <p>Aggregated Shariah compliance data cross-checked with Musaffa, Islamicly, Zoya, and Zamzam Capital.</p>
           </div>
           <div class="compliance-layout">
             <div class="chart-box">
@@ -176,7 +167,7 @@
                   <text x="18" y="20.35" class="percentage">92%</text>
                 </svg>
               </div>
-              <p class="chart-caption">Overall Halal Equity Compliance Index across screened holdings.</p>
+              <p class="chart-caption">Combined compliance percentage index for target equities across leading screeners.</p>
             </div>
             <div class="screener-table-wrapper">
               <table class="screener-table">
@@ -196,11 +187,11 @@
           </div>
         </div>
 
-        <!-- Tab 4: Sukuk & Takaful Reports -->
+        <!-- Tab 4: Sukuk & Takaful Research -->
         <div class="tab-panel" id="tab-sukuk">
           <div class="panel-header">
-            <h3>Sukuk Structuring &amp; Takaful Research</h3>
-            <p>Deep-dive research papers on Islamic capital markets, asset backing, and risk-sharing models.</p>
+            <h3>Sukuk &amp; Takaful Research Papers</h3>
+            <p>In-depth frameworks covering risk sharing, retakaful tech, and capital market structures.</p>
           </div>
           <div class="cards-grid" id="sukukCardsContainer"></div>
         </div>
@@ -215,13 +206,13 @@
       <div class="section-head">
         <span class="kicker">Regular Blogs</span>
         <h2>Ongoing Commentary &amp; Case Studies</h2>
-        <p>Updates on Shariah-conscious markets, product analyses, and detailed YouTube video explanations.</p>
+        <p>Updates on Shariah-conscious markets and products, linked directly to video breakdowns on our YouTube channel.</p>
       </div>
       <div class="cards-grid" id="blogsContainer"></div>
     </div>
   </section>
 
-  <!-- Training & Network Section -->
+  <!-- Beyond Consulting / Training -->
   <section>
     <div class="wrap">
       <div class="section-head">
@@ -231,11 +222,11 @@
       <div class="extra-grid">
         <div class="extra-card">
           <h4>Islamic Finance Videos</h4>
-          <p>YouTube content covering fundamentals, structural dynamics, and case studies.</p>
+          <p>YouTube content covering fundamentals, structural dynamics, and practical case studies.</p>
         </div>
         <div class="extra-card">
           <h4>Research Training</h4>
-          <p>Islamic finance research training and basic data analytics courses.</p>
+          <p>Islamic finance research training and practical data analytics courses.</p>
         </div>
         <div class="extra-card">
           <h4>Trainers &amp; Academies</h4>
@@ -249,13 +240,13 @@
     </div>
   </section>
 
-  <!-- Contact & Booking Section -->
+  <!-- Contact & Google Form Links -->
   <section id="contact">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">Contact &amp; Engagement</span>
-        <h2>Get in Touch with NaJaH_IQ</h2>
-        <p>Select your track below to connect with us directly via our specialized booking forms.</p>
+        <h2>Connect with NaJaH_IQ</h2>
+        <p>Select your track below to access our direct booking forms.</p>
       </div>
       <div class="contact-grid">
         <ul class="path-list">
@@ -290,7 +281,7 @@
           <li>
             <div class="path-info">
               <a class="path-name" href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer">General Inquiry</a>
-              <span class="path-subtext">Any other question — use the form and we'll respond.</span>
+              <span class="path-subtext">Any other questions? Use the form, and we'll respond promptly.</span>
             </div>
             <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Open Form</a>
           </li>
@@ -310,7 +301,9 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand">NaJaH<span>_IQ</span></div>
+        <div class="footer-logo-wrapper">
+          <img src="Logo.png" alt="NaJaH_IQ Logo" class="footer-logo">
+        </div>
         <p>Serving the Islamic economy and the Muslim community through affordable, practical, Shariah-conscious consulting, research, and training.</p>
       </div>
       <div class="footer-cols">
@@ -350,32 +343,32 @@
   </div>
 </footer>
 
-<!-- Purchase / Access Modal -->
+<!-- Purchase Access Modal -->
 <div id="paymentModal" class="modal-backdrop" aria-hidden="true">
   <div class="modal-box">
     <button class="modal-close" id="modalCloseBtn">&times;</button>
     <div class="modal-header">
-      <span class="kicker">Premium Research Unlock</span>
+      <span class="kicker">Research Report Access</span>
       <h3 id="modalPaperTitle">Paper Title</h3>
       <p id="modalPaperPrice" class="price-tag">$0.00</p>
     </div>
     <div class="modal-body">
-      <p id="modalPaperDesc">Research summary details will appear here.</p>
+      <p id="modalPaperDesc">Paper details and structural summary.</p>
       <div class="payment-mock">
-        <p><strong>Unlock Full PDF &amp; Analytical Spreadsheets:</strong></p>
-        <button id="btnConfirmPay" class="btn btn-primary btn-full">Proceed to Secure Payment</button>
-        <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-full" style="margin-top:8px;">Inquire via Google Form</a>
+        <p><strong>To download full reports &amp; models:</strong></p>
+        <button id="btnConfirmPay" class="btn btn-primary btn-full">Proceed to Access Payment</button>
+        <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-full" style="margin-top:8px;">Inquire via Booking Form</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- YouTube Video Modal -->
+<!-- YouTube Video Player Modal -->
 <div id="videoModal" class="modal-backdrop" aria-hidden="true">
   <div class="modal-box modal-lg">
     <button class="modal-close" id="videoModalCloseBtn">&times;</button>
     <div class="modal-header">
-      <span class="kicker">Video Analysis</span>
+      <span class="kicker">Video Commentary</span>
       <h3 id="videoModalTitle">Video Title</h3>
     </div>
     <div class="modal-body">
