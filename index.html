@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <header>
   <div class="utility-bar">
     <div class="wrap utility-bar-inner">
@@ -32,6 +32,7 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#insights" class="nav-link">Insights &amp; Work</a></li>
+          <li><a href="#platform" class="nav-link">Learn &amp; Practice</a></li>
           <li><a href="#blogs" class="nav-link">Blogs</a></li>
           <li><a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta">Book a Call <span>→</span></a></li>
         </ul>
@@ -39,7 +40,7 @@
     </div>
   </div>
 </header>
-
+ 
 <main id="home">
   <!-- Hero Section -->
   <section class="hero">
@@ -61,7 +62,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- About Section -->
   <section id="about">
     <div class="wrap">
@@ -83,7 +84,7 @@
           <p>Our aim is to make professional expertise more accessible by providing practical and affordable services across research, analytics, and strategy.</p>
         </div>
       </div>
-
+ 
       <div class="pillars">
         <div class="pillar">
           <h3>Our Mission</h3>
@@ -100,7 +101,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- Services Accordion Section -->
   <section id="services" class="alt">
     <div class="wrap">
@@ -112,7 +113,7 @@
       <div class="segments" id="segments"></div>
     </div>
   </section>
-
+ 
   <!-- Dynamic Insights & Sample Work Section with Sliding Effects -->
   <section id="insights">
     <div class="wrap">
@@ -121,7 +122,7 @@
         <h2>Dynamic Research &amp; Intelligence Hub</h2>
         <p>Explore our client research papers, market analysis, Shariah stock compliance metrics, portfolio analytics, and Sukuk &amp; Takaful reports.</p>
       </div>
-
+ 
       <!-- Sliding Navigation Bar -->
       <div class="sliding-tabs-nav">
         <button class="tab-btn active" data-target="tab-research">Research Reports &amp; Sample Work</button>
@@ -129,7 +130,7 @@
         <button class="tab-btn" data-target="tab-halal">Halal Compliance &amp; Portfolio</button>
         <button class="tab-btn" data-target="tab-sukuk">Sukuk &amp; Takaful Reports</button>
       </div>
-
+ 
       <div class="tabs-container">
         
         <!-- Tab 1: Searchable Alphabetical Research Papers -->
@@ -141,7 +142,7 @@
           </div>
           <div class="papers-list" id="papersContainer"></div>
         </div>
-
+ 
         <!-- Tab 2: Market Analysis & Islamic Banking -->
         <div class="tab-panel" id="tab-market">
           <div class="panel-header">
@@ -150,7 +151,7 @@
           </div>
           <div class="cards-grid" id="marketCardsContainer"></div>
         </div>
-
+ 
         <!-- Tab 3: Halal Compliance & Portfolio Graphics -->
         <div class="tab-panel" id="tab-halal">
           <div class="panel-header">
@@ -186,7 +187,7 @@
             </div>
           </div>
         </div>
-
+ 
         <!-- Tab 4: Sukuk & Takaful Research -->
         <div class="tab-panel" id="tab-sukuk">
           <div class="panel-header">
@@ -195,11 +196,11 @@
           </div>
           <div class="cards-grid" id="sukukCardsContainer"></div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- Regular Blogs Section -->
   <section id="blogs" class="alt">
     <div class="wrap">
@@ -211,7 +212,7 @@
       <div class="cards-grid" id="blogsContainer"></div>
     </div>
   </section>
-
+ 
   <!-- Beyond Consulting / Training -->
   <section>
     <div class="wrap">
@@ -239,7 +240,40 @@
       </div>
     </div>
   </section>
-
+ 
+  <!-- Learn & Practice Platform -->
+  <section id="platform" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Learn &amp; Practice</span>
+        <h2>Learn Islamic finance daily, then practise it on real projects.</h2>
+        <p>The NaJaH_IQ learning platform is built for students and fresh graduates. Learn a little every day, test yourself, and apply what you know on short, real projects from our client work.</p>
+      </div>
+      <div class="plat-grid">
+        <div class="plat-card"><span class="status">Preview below</span><h4>Daily Learning</h4><p>One short quiz a day across banking, sukuk, takaful and riba, with points, streaks and an answer history.</p></div>
+        <div class="plat-card"><span class="status soon">Opening to beta</span><h4>Project Board</h4><p>Short, scoped tasks taken from real client work, such as product comparisons and market summaries. Apply, deliver, get feedback and earn a certificate.</p></div>
+        <div class="plat-card"><span class="status">Preview below</span><h4>Bank Day Simulation</h4><p>Step into a day at an Islamic bank and match each customer to the right structure.</p></div>
+      </div>
+      <div class="try-grid">
+        <div class="try-box"><h3>Today's quiz</h3><p class="try-stats" id="dailyStats"></p><div id="dailyQuiz"></div></div>
+        <div class="try-box"><h3>A day at the Islamic bank</h3><p class="try-stats">Match six customers to the right structure.</p><div id="bankGame"></div></div>
+      </div>
+      <div class="section-head" style="margin-bottom:20px"><h3>Where the platform is heading</h3></div>
+      <ul class="roadmap">
+        <li><strong>1. Learn</strong><span>Daily quizzes, points, streaks, audio lessons, Bank Day game.</span><em class="status">First release</em></li>
+        <li><strong>2. Practice</strong><span>Project board with real client tasks, feedback and certificates.</span><em class="status soon">Next</em></li>
+        <li><strong>3. Community</strong><span>Profiles, leaderboards, referrals and mentor access.</span><em class="status soon">Planned</em></li>
+        <li><strong>4. Intelligence</strong><span>Helper chatbot, scholar Q&amp;A and halal portfolio tools.</span><em class="status soon">Planned</em></li>
+        <li><strong>5. Marketplace</strong><span>Clients post projects; trained learners and freelancers deliver them.</span><em class="status soon">Planned</em></li>
+      </ul>
+      <div class="cta-row" style="margin-top:28px">
+        <a href="https://forms.gle/qHSvrE6bfRWmQYMk6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join the beta</a>
+        <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Partner with us</a>
+      </div>
+      <p class="plat-note">Quizzes and simulations are educational. They are not Shariah rulings. Progress is saved on your own device.</p>
+    </div>
+  </section>
+ 
   <!-- Contact & Google Form Links -->
   <section id="contact">
     <div class="wrap">
@@ -286,7 +320,7 @@
             <a href="https://forms.gle/Wtq2EEhE5vZyKUEj8" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">Open Form</a>
           </li>
         </ul>
-
+ 
         <div class="freelancer-join">
           <h3>Join as a Freelancer</h3>
           <p>If you are a researcher, analyst, designer, consultant, or subject expert interested in ethical, Shariah-conscious work, join our professional network.</p>
@@ -296,7 +330,7 @@
     </div>
   </section>
 </main>
-
+ 
 <footer>
   <div class="wrap">
     <div class="footer-grid">
@@ -313,6 +347,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#insights">Insights &amp; Work</a></li>
+            <li><a href="#platform">Learn &amp; Practice</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -342,7 +377,7 @@
     </div>
   </div>
 </footer>
-
+ 
 <!-- Purchase Access Modal -->
 <div id="paymentModal" class="modal-backdrop" aria-hidden="true">
   <div class="modal-box">
@@ -362,7 +397,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- YouTube Video Player Modal -->
 <div id="videoModal" class="modal-backdrop" aria-hidden="true">
   <div class="modal-box modal-lg">
@@ -378,7 +413,8 @@
     </div>
   </div>
 </div>
-
+ 
 <script src="app.js"></script>
+<script src="learn.js"></script>
 </body>
 </html>
